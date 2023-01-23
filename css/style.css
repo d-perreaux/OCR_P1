@@ -11,15 +11,23 @@ body {
     line-height: 19px;
 }
 
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0 40px 40px 40px;
+    margin: 0 16px 80px 16px;
 }
 
 header img {
-    max-width: 96px;
+    width: 61px;
 }
 
 nav ul {
@@ -65,21 +73,64 @@ a:visited {
     color: black;
 }
 
-
-
-
-
-
-
-.Title-Section {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
+section {
+    margin-top: 40px 0;
+    margin: 16px;
 }
 
-.Card-Title {
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.wrap-location-icon {
+    background-color: #D9D9D9;
+    min-width: 50px;
+    min-height: 49px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container form {
+    display: flex;
+}
+
+.search-container input{
+    height: 100%;
+    width: 100%;
+}
+
+.search-container input[type="search"] {
+    border-top: solid 1px #D9D9D9 ;
+    border-bottom: solid 1px #D9D9D9;
+}
+
+.search-container input[type="submit"] {
+    font-weight: 700;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    padding: 0 16px;
+}
+
+.search-container input {
+    border: none;
+    font-weight: 700;
+    padding: 0 16px;
+}
+
+
+
+
+
+
+
+
+
+.h2 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
