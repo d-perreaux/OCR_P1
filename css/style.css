@@ -1,10 +1,75 @@
-.Information {
+body {
+    margin: 0 40px;
+
+}
+
+* {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 40px 40px 40px;
+}
+
+header img {
+    max-width: 96px;
+}
+
+nav ul {
+    list-style: none ;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 71px;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 71px;
+    width: 144px;
+}
+
+nav ul div {
+    height: 3px;
+    background-color: #0065FC;
+    width: 0%;
+    transition: 0.5s;
+}
+
+nav a:hover + div {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+nav a:hover {
+    color: #0065FC;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+
+
+
 
 .Title-Section {
     font-family: 'Raleway', sans-serif;
