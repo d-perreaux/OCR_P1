@@ -20,6 +20,14 @@ h1 {
     line-height: 26px;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -174,6 +182,7 @@ section {
     font-weight: 700;
 }
 
+
 .wrapper-amount-research-result {
     display: flex;
     justify-content: flex-start;
@@ -192,6 +201,16 @@ section {
     align-items: center;
 }
 
+
+#offers {
+    display: flex;
+    justify-content: space-between;
+}
+
+#offers a {
+    text-decoration: none;
+}
+
 #offers,
 #offers-main {
     margin-left: 0;
@@ -203,7 +222,15 @@ section {
 
 #offers-main {
     background-color: #D9D9D9;
-    width: 66%;
+    width: 59%;
+    height: 300px;
+    padding: 24px;
+    border-radius: 20px;
+}
+
+#offers-sponsored {
+    background-color: #D9D9D9;
+    width: 30%;
     height: 300px;
     padding: 24px;
     border-radius: 20px;
@@ -213,27 +240,31 @@ section {
     display: flex;
     flex-direction: column;
     width: 33%;
-    height: 199px;
-    border: solid 5px white;
-    border-radius: 20px;
+    min-height: 205px;
     background-color: white;
+    border-radius: 20px;
+    outline: solid 4px white;
+    outline-offset: -4px;
+    border: 1px solid white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.wrapper-card-main-img {
+.wrapper-img-card-main {
     height: 124px;
     width: 100%;
 }
 
-
-.wrapper-card-main-img img {
+.wrapper-img-card-main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px 16px 0 0;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+
 }
 
 .container-card-main {
-    padding: 4px 8px;
+    padding: 6px 16px;
 }
 .container-card-main h2,
 .container-card-main p {
@@ -241,18 +272,14 @@ section {
     padding: 2px;
 }
 
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
+span {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
 }
 
 .wrapper-card-main-stars{
     display: flex;
     justify-content: flex-start;
-    padding: 1px 8px;
+    padding: 1px 0 10px 16px;
 }
 
 .colored-star {
@@ -262,3 +289,53 @@ h2 {
 .no-colored-star {
     color: #D9D9D9;
 }
+
+.card-sponsored {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 144px;
+    background-color: white;
+    border-radius: 20px;
+    outline: solid 4px white;
+    outline-offset: -4px;
+    border: 1px solid white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.wrapper-img-card-sponsored {
+    max-height: 144px;
+    width: 38%;
+}
+
+.wrapper-img-card-sponsored img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.container-card-sponsored {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px 16px;
+}
+
+.container-card-sponsored h2,
+.container-card-sponsored p {
+    margin: 0;
+    padding: 2px;
+}
+
+.wrapper-text-card-sponsored {
+    padding: 6px 0;
+}
+
+.wrapper-card-sponsored-stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+}
+
