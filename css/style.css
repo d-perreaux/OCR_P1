@@ -24,6 +24,13 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
@@ -174,7 +181,8 @@ section {
 }
 
 .filters-container .fa-solid, 
-.wrapper-amount-research-result .fa-solid {
+.wrapper-amount-research-result .fa-solid,
+.container-offers-sponsored-title .fa-solid {
     color: #0065FC;
 }
 
@@ -205,6 +213,7 @@ section {
 #offers {
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 
 #offers a {
@@ -223,24 +232,56 @@ section {
 #offers-main {
     background-color: #D9D9D9;
     width: 59%;
-    height: 300px;
-    padding: 24px;
+    height: auto;
+    padding: 40px 32px 32px 32px;
     border-radius: 20px;
+}
+
+.container-offers-sponsored-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.container-line-main-offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0;
 }
 
 #offers-sponsored {
     background-color: #D9D9D9;
     width: 30%;
-    height: 300px;
-    padding: 24px;
+    height: auto;
+    padding: 40px 32px 32px 32px;;
     border-radius: 20px;
+}
+
+.container-line-main-sponsored {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px 0;
+    height: 100%;
+}
+
+#offers-main a {
+    display: inline-block;
+    width: 31%;
+}
+
+#offers-sponsored a {
+    display: inline-block;
+    height: 31%;
 }
 
 .card-main {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 100%;
     min-height: 205px;
+    height: 100%;
     background-color: white;
     border-radius: 20px;
     outline: solid 4px white;
@@ -256,7 +297,7 @@ section {
 
 .wrapper-img-card-main img {
     width: 100%;
-    height: 100%;
+    height: 124px;
     object-fit: cover;
     object-position: center;
     border-radius: 20px 20px 0 0;
@@ -265,11 +306,17 @@ section {
 
 .container-card-main {
     padding: 6px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 8px 16px 8px 16px;
 }
-.container-card-main h2,
+.container-card-main h3,
 .container-card-main p {
     margin: 0;
-    padding: 2px;
+    padding: 2px 0px;
 }
 
 span {
@@ -279,7 +326,7 @@ span {
 .wrapper-card-main-stars{
     display: flex;
     justify-content: flex-start;
-    padding: 1px 0 10px 16px;
+    padding: 2px 0;
 }
 
 .colored-star {
@@ -294,7 +341,7 @@ span {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 144px;
+    height: 140px;
     background-color: white;
     border-radius: 20px;
     outline: solid 4px white;
@@ -303,15 +350,11 @@ span {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.wrapper-img-card-sponsored {
-    max-height: 144px;
-    width: 38%;
-}
-
-.wrapper-img-card-sponsored img {
-    height: 100%;
-    width: 100%;
+.card-sponsored-img {
+    height: 140px;
+    width: 40%;
     object-fit: cover;
+    object-position: center;
     border-radius: 20px 0 0 20px;
 }
 
@@ -322,14 +365,14 @@ span {
     padding: 6px 16px;
 }
 
-.container-card-sponsored h2,
+.container-card-sponsored h3,
 .container-card-sponsored p {
     margin: 0;
-    padding: 2px;
+    padding: 2px 0;
 }
 
 .wrapper-text-card-sponsored {
-    padding: 6px 0;
+    padding: 6px 0 4px 0;
 }
 
 .wrapper-card-sponsored-stars {
