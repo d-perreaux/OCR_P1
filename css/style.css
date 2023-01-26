@@ -81,7 +81,8 @@ nav a {
     position: relative;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
     color: #0065FC;
 }
 
@@ -224,6 +225,7 @@ section {
 #offers-main,
 #activities {
     margin-left: 0;
+    margin-right: 0;
 }
 
 #offers h1 {
@@ -422,4 +424,37 @@ span {
     display: flex;
     justify-content: space-between;
     height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #D9D9D9;
+    padding: 32px 48px;
+    margin-top: 56px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    padding: 0 16px;
+}
+
+.footer-column a {
+    text-decoration: none;
+}
+
+.footer-column ul {
+    list-style: none ;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column ul li {
+    padding: 4px 0;
 }
