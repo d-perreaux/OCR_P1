@@ -221,7 +221,8 @@ section {
 }
 
 #offers,
-#offers-main {
+#offers-main,
+#activities {
     margin-left: 0;
 }
 
@@ -261,7 +262,7 @@ section {
 .container-line-main-sponsored {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 7%;
     padding: 16px 0;
     height: 100%;
 }
@@ -273,7 +274,6 @@ section {
 
 #offers-sponsored a {
     display: inline-block;
-    height: 31%;
 }
 
 .card-main {
@@ -287,7 +287,7 @@ section {
     outline: solid 4px white;
     outline-offset: -4px;
     border: 1px solid white;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper-img-card-main {
@@ -347,7 +347,7 @@ span {
     outline: solid 4px white;
     outline-offset: -4px;
     border: 1px solid white;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-sponsored-img {
@@ -362,7 +362,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 6px 16px;
+    padding: 4px 16px;
 }
 
 .container-card-sponsored h3,
@@ -372,7 +372,7 @@ span {
 }
 
 .wrapper-text-card-sponsored {
-    padding: 6px 0 4px 0;
+    padding: 4px 0 4px 0;
 }
 
 .wrapper-card-sponsored-stars {
@@ -382,3 +382,44 @@ span {
     padding-bottom: 8px;
 }
 
+#activities{
+    height: 100%;
+    margin-top: 56px;
+}
+
+#activities h1 {
+    margin-bottom: 24px;
+}
+
+#activities a{
+    display: inline-block;
+    width: 22%;
+    text-decoration: none;
+}
+
+.card-activity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+
+#activities img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-activity h2 {
+    padding: 0 15px;
+}
+
+.container-line-activities {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
