@@ -162,7 +162,7 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 8px;
+    padding: 8 0px;
     gap: 30px;
 }
 
@@ -232,6 +232,11 @@ section {
     margin-top: 0px;
 }
 
+#offers p, 
+#offers span {
+    font-size: 14px;
+}
+
 #offers-main {
     background-color: #D9D9D9;
     width: 59%;
@@ -261,7 +266,7 @@ section {
     border-radius: 20px;
 }
 
-.container-line-main-sponsored {
+.container-line-sponsored {
     display: flex;
     flex-direction: column;
     gap: 7%;
@@ -310,10 +315,10 @@ section {
     padding: 6px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     height: 100%;
-    padding: 8px 16px 8px 16px;
+    padding: 4px 16px 8px 12px;
 }
 .container-card-main h3,
 .container-card-main p {
@@ -329,6 +334,11 @@ span {
     display: flex;
     justify-content: flex-start;
     padding: 2px 0;
+}
+
+.wrapper-card-main-stars i,
+.wrapper-card-sponsored-stars i {
+    font-size: 0.85em;
 }
 
 .colored-star {
@@ -364,7 +374,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4px 16px;
+    padding: 4px 10px;
 }
 
 .container-card-sponsored h3,
@@ -401,6 +411,7 @@ span {
 
 .card-activity {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -457,4 +468,57 @@ footer {
 
 .footer-column ul li {
     padding: 4px 0;
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+    nav ul div {
+        display: none;
+    }
+
+    .filters-container {
+        gap: 6px;
+    }
+
+    .wrapper-filter {
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    #offers {
+        flex-direction: column;
+    }
+
+    #offers-sponsored h3 {
+        font-size: 14px;
+    }
+
+    #offers-sponsored p {
+        font-size: 13px;
+    }
+
+    #offers-main {
+        width: auto;
+    }
+
+    #offers-sponsored {
+        width: auto;
+    }
+
+    .container-line-sponsored {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1%;
+    }
+
+    .container-line-sponsored a {
+        width: 32%;
+    }
+
+    #activities img {
+        height: 232px;
+    }
+}
+
+@media screen and (max-width: 767px) {
 }
