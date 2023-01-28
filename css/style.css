@@ -86,12 +86,15 @@ footer a:hover {
     color: #0065FC;
 }
 
+a {
+    color: black;
+}
+
 a:visited {
     color: black;
 }
 
 section {
-    margin-top: 40px 0;
     margin: 16px;
 }
 
@@ -158,11 +161,20 @@ section {
     cursor:pointer;
 }
 
+.search-container button[type="submit"] {
+    display: none;
+}
+
 .filters-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 8 0px;
+    gap: 30px;
+}
+
+.wrapper-couple-filters {
+    display: flex;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -187,8 +199,9 @@ section {
     color: #0065FC;
 }
 
-.filters-container div {
+.filters-container p {
     font-weight: 700;
+    margin: 0;
 }
 
 
@@ -238,7 +251,7 @@ section {
 }
 
 #offers-main {
-    background-color: #D9D9D9;
+    background-color: #DEEBFF;
     width: 59%;
     height: auto;
     padding: 40px 32px 32px 32px;
@@ -259,7 +272,7 @@ section {
 }
 
 #offers-sponsored {
-    background-color: #D9D9D9;
+    background-color: #DEEBFF;
     width: 30%;
     height: auto;
     padding: 40px 32px 32px 32px;;
@@ -297,12 +310,8 @@ section {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper-img-card-main {
-    height: 124px;
-    width: 100%;
-}
 
-.wrapper-img-card-main img {
+.card-main img {
     width: 100%;
     height: 124px;
     object-fit: cover;
@@ -479,6 +488,10 @@ footer {
         gap: 6px;
     }
 
+    .wrapper-couple-filters {
+        gap: 6px;
+    }
+
     .wrapper-filter {
         padding: 8px 10px;
         gap: 6px;
@@ -486,6 +499,7 @@ footer {
 
     #offers {
         flex-direction: column;
+        gap: 32px
     }
 
     #offers-sponsored h3 {
@@ -521,4 +535,170 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    body {
+        padding: 0;
+    }
+
+    #offers-main {
+    width: auto;
+    padding: 0;
+    }
+
+    header {
+        margin: 24px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: stretch;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    nav ul a {
+        margin-bottom: 16px;
+    }
+
+    nav ul div {
+        width: 100%;
+        background-color: #D9D9D9;
+    }
+
+    nav a:active + div {
+        background-color: #0065FC;
+    }
+
+    #section-recherche {
+        padding: 4px 8px;
+    }
+
+    .search-container {
+        margin-bottom: 24px;
+    }
+
+    .search-container input[type="submit"] {
+        display: none;
+    }
+
+    .search-container button[type="submit"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 0 15px 15px 0;
+        padding: 0 16px;
+        cursor:pointer;
+        height: 100%;
+    }
+
+    .filters-container h2 {
+        margin: 4px;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .wrapper-couple-filters {
+        width: 100%;
+        gap: 1%
+    }
+
+    .wrapper-filter {
+        width: 48%;
+        justify-content: flex-start;
+        padding: 8px 8px;
+    }
+
+    .wrapper-filter p {
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    #offers {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #offers-sponsored {
+        width: auto;
+        border-radius: 0;
+    }
+
+    #offers-main {
+        width: 100%;
+        background-color: white;
+    }
+
+    #offers-main h1 {
+        padding: 32px 32px 16px 32px;
+    }
+
+    #offers-sponsored,
+    #activities {
+        padding: 32px;
+    }
+
+    .container-line-main-offers {
+        padding: 0 32px;
+    }
+
+    .container-line-sponsored a,
+    .container-line-main-offers a,
+    .container-line-activities a {
+        margin: 16px 0;
+    }
+
+    .container-line-main-offers {
+        flex-direction: column;
+    }
+
+    #offers-main a {
+        width: 100%;
+    }
+
+    #offers-main h2 {
+        display: none;
+    }
+
+    #activities {
+        padding: 0 24px;
+    }
+
+    .container-line-activities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #activities a {
+        width: 100%;
+    }
+
+    #activities img {
+        height: 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
 }
